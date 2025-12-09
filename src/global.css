@@ -6,7 +6,7 @@
 
 body {
     background-image: url("./lib/assets/images/bg.png");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: repeat-x;
     overflow-x: hidden;
 
