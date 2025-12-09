@@ -63,6 +63,9 @@
 
 
     ]
+
+    // Import component
+    import FlippingCard from "$lib/Components/FlippingCard.svelte"
 </script>
 
 <main class="main-section">
@@ -97,9 +100,7 @@ I wish you the best in every way possible.</p>
             </div>
             <div class="grid-container" data-aos="fade-up" data-aos-delay="200">
                     {#each text as t}
-                        <div class="containers">
-                            <p class="text itim" style="text-align: center; color: 	#9F2B68">{t}</p>
-                        </div>
+                        <FlippingCard info={t}></FlippingCard>
                     {/each}
                 </div>
                 
@@ -152,6 +153,8 @@ I wish you the best in every way possible.</p>
         </div>
     </section>
 </main>
+
+
 
 <style lang="scss">
 
@@ -345,11 +348,17 @@ I wish you the best in every way possible.</p>
                         justify-content: center;
                         padding: 0 1rem;
 
+
                         .header {
                             font-size: clamp(16px ,3vw, 32px);
                             text-align: center;
                         }
+                        
                     }
+                    
+
+                    
+
 
                 }
 
@@ -363,11 +372,6 @@ I wish you the best in every way possible.</p>
                     justify-content: center;
                     
                     gap: 20px;
-                    .containers {
-                        background-color: #FFB6C1;
-                        padding: 1.5rem;
-                    }
-
                 }
 
                 @media only screen and (max-width: 1200px) {
@@ -376,10 +380,7 @@ I wish you the best in every way possible.</p>
                         flex-flow: row wrap;
                         align-items: center;
 
-                        .containers {
-                            width: 269px;
-                            height: 297px;
-                        }
+                        
 
                     }
                     
