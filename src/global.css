@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./lib/assets/images/bg.png");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+
+}
+
+.wrapper {
+    width: min(calc(100% - 3rem), 100rem);
+    margin-inline: auto;
+}
+
+.itim {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
